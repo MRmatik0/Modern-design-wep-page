@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,700;1,200&family=Montserrat:wght@100;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", "sans-serif";
+    /* font 100, 400, 700 */
+
+}
+
+body{
+    background-image: url("background1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+
+
+/* HEADER */
+
+header{
+
+    padding: 25px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    
+    
+    
+    
+}
+
+nav{
+    display: flex;
+    position: relative;
+    left: 55px;
+}
+
+nav a{
+    text-decoration: none;
+    font: 18px;
+    
+    color: white;
+    position: relative;
+    margin-right: 50px;
+}
+
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    bottom: -5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: -5px;
+    border-radius: 5px;
+}
+
+header form input{
+    width: 200px;
+    height: 35px;
+    padding-left: 15px;
+    padding-top: 23px;
+    padding-bottom: 22px;
+    
+    outline: none;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    position: relative;
+    right: 55px;
+    cursor: pointer;
+}
+
+header form input::placeholder{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+header form button {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+header form button i{
+    color: white;
+    position: relative;
+    right: 105px;
+    font-size: 16px;
+}
+
+
+
+
+/* BODY */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+    
+}
+
+.box{
+    width: 90%;
+    height: 725px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #D0CBEA;
+
+    
+}
+
+.information-section{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+
+.logo h1{
+    color: white;
+    font-size: 36px;
+}
+
+.logo i{
+    color: white;
+    font-size: 36px;
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: -150px;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+
+.information p{
+    color: white;
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+.information h2{
+    color: white;
+    font-size: 48px;
+    
+}
+
+
+.login-section{
+    
+    backdrop-filter: blur(5px);
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-section {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login-section h2{
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    top: -150px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: #0C1942;
+    
+
+}
+
+.login-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-input input{
+    width: 400px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: 3px solid white;
+    font-size: 18px;
+}
+
+.login-input i{
+    position: relative;
+    left: 380px;
+    bottom: 25px;
+    font-size: 18px;
+}
+
+.link-group{
+    display: flex;
+    justify-content:space-between;
+    gap: 25px;
+    padding-bottom: 15px;
+    
+}
+
+.link-group a{
+    text-decoration: none;
+    font: 18px;
+    color: white;
+    position: relative;
+}
+
+.link-group a:hover{
+    color: rgba(255, 255, 255, 0.774);
+}
+
+.login-section .log-button{
+    width: 400px;
+    height: 45px;
+    color: white;
+    background-color: #0C1942;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+.login-section .log-button:hover{
+    background-color: #3859A9;
+    
+}
+
+.login-section .log-button:active{
+    background-color: #0C1942;
+    transition:none;
+}
+
+
+.link-bottom{
+    display: flex;
+    justify-content:space-between;
+    gap: 25px;
+    padding-top: 15px;
+    color: white;
+    text-decoration: none;
+    font: 18px;
+    color: white;
+    position: relative;
+}
+
+.link-bottom a{
+    
+    color: white;
+    text-decoration: none;
+    font: 18px;
+    color: white;
+    position: relative;
+}
+
+.link-bottom a:hover{
+    
+    color: rgba(255, 255, 255, 0.774);
+}
+
+
+
+
+
